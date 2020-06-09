@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
-import Layout from "/home/patrick/Documents/portfolio/patricktan/src/components/theme/layout/layout.js"
+import Layout from "../layout/layout"
 
 
 
