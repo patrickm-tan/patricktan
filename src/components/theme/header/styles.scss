@@ -13,7 +13,7 @@ header {
           font-weight: 300;
           text-decoration: none;
           letter-spacing: 1.5px;
-          color: $slate;
+          color: $main-text;
           font-size: medium;
         }
       }
@@ -25,7 +25,7 @@ header {
             letter-spacing: 1.75px;
             text-transform: uppercase;
             font-size: 0.75rem;
-            color: $slate;
+            color: $main-text;
             &:last-child {
               margin-right: 0px;
             }

@@ -4,23 +4,32 @@
 $font: Work-Sans, sans-serif;
 
 //Colors
-$white: #fff;
-$slate: #353434;
-$maroon: #83333e;
-$off-white: #f2f4f5;
-$green: #7dc485;
+$background: #fff9f9;
+$slate: #393232;
+$main-text: #393232;
+$green: #7dc485;;
 
-//Sizes
+//Component Sizes
 $headerHeight: 80px;
+$block-spacing: 1.5rem !default;
 
-//Typography
-$size-1: 4rem;
-$size-2: 3rem;
-$size-3: 2.5rem;
-$size-4: 2rem;
-$size-5: 1.5em;
-$size-6: 1.25rem;
+//Typography Sizes
+$size-1: 3rem !default;
+$size-2: 2.5rem !default;
+$size-3: 2rem !default;
+$size-4: 1.5rem !default;
+$size-5: 1.25rem !default;
+$size-6: 1rem !default;
+$size-7: 0.75rem !default;
 
+//Typography Weights
 $fontweight-light: 400;
 $fontweight-medium: 600;
 $fontweight-semibold: 800;
+
+//Desktop Sizes
+$gap: 32px !default;
+$tablet: 769px !default;
+$desktop: 960px + (2 * $gap) !default;
+$widescreen: 1152px + (2 * $gap) !default;
+$fullhd: 1344px + (2 * $gap) !default;

@@ -20,8 +20,6 @@ const IndexPage = () => (
           <li> <Link to = {'./projects/royal-bank-of-canada'}>
           FCB/SIX
           </Link>
-
-
           </li>
           <li>Royal Bank of Canada</li>
           <li>University of Toronto</li>
