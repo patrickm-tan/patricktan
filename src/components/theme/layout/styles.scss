@@ -1,0 +1,58 @@
+@import "../../utilities/variables";
+@import "../../utilities/base";
+
+* {
+    font-family: $font;
+    color: $slate;
+}
+
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - #{$headerHeight});
+    overflow: hidden;
+    animation-name: fade-in;
+	animation-fill-mode: both;
+	animation-duration: 1s;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-weight: $fontweight-light;
+    font-size: $size-5;
+    text-transform: uppercase;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    padding-right: 25px;
+    font-size: $size-5;
+}
+
+.is-green {
+    color: $green;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+@keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
