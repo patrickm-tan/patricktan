@@ -13,17 +13,14 @@ const IndexPage = () => (
         <h1>Patrick Tan</h1>
         <h2>user experience researcher</h2>
         <br/>
-        <p>Hi, I'm <span className="is-green">Patrick</span> — A UX Researcher with a background in computer science, psychology and communication technology. I previously worked at the Royal Bank of Canada as a design researcher. Interesed in inclusivity & accessibility, social connectivity, & the form and complexity of eggs.</p>
+        <p>Hi, I'm <span className="is-green">Patrick</span> — A UX Researcher with a background in computer science, psychology and communication technology. I previously worked at the Royal Bank of Canada as a <span className="is-green">design researcher</span>. Interesed in <span className="is-green">inclusive</span> and <span className="is-green">accessible</span> design.</p>
         <br/>
         <p className="subtitle">previous work</p>
         <ul>
-          <li> <Link to = {'./projects/royal-bank-of-canada'}>
-          FCB/SIX
-          </Link>
-          </li>
-          <li>Royal Bank of Canada</li>
-          <li>University of Toronto</li>
-          <li>Presto</li>
+          <li> <Link to = {'./projects/royal-bank-of-canada'}>FCB/SIX</Link></li>
+          <li> <Link to = {'./projects/royal-bank-of-canada'}>Royal Bank of Canada</Link></li>
+          <li> <Link to = {'./projects/royal-bank-of-canada'}>University of Toronto</Link></li>
+          <li> <Link to = {'./projects/royal-bank-of-canada'}>Presto</Link></li>
         </ul>
       </div>
     </div>

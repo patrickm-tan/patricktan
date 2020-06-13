@@ -30,3 +30,10 @@ p {
 }
 
 //Links
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    &:hover {
+        color: $green;
+    }
+}
