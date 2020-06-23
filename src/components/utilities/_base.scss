@@ -3,7 +3,8 @@
 
 //Base Font Size
 html {
-  font-size: 16px;
+    @include interpolate(font-size, 320px, 1366px, 14px, 20px);
+    color: $main-text;
 }
 
 body {
@@ -11,29 +12,21 @@ body {
     background-color: $background;
 }
 
-h1, h2, p {
-    color: $main-text;
-}
-
-h1 {
-    font-size: $size-1;
-}
-
-h2 {
-    font-size: $size-3;
+h1,h2,h3,h4,h5 {
+	@include interpolate((padding-top, padding-bottom), 20rem, 70rem, 0rem, .5rem);
 }
 
 p {
-    font-size: $size-4;
     letter-spacing: 1.5px;
     font-weight: 400;
 }
 
 //Links
 a {
+    display: inline-block;
     text-decoration: none;
     letter-spacing: 1px;
     &:hover {
-        color: $green;
+        color: $links;
     }
 }

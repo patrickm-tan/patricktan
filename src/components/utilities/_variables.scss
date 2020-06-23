@@ -5,9 +5,9 @@ $font: Work-Sans, sans-serif;
 
 //Colors
 $background: #fff9f9;
-$slate: #393232;
 $main-text: #393232;
-$green: #7dc485;;
+$links: #8e9490;
+$highlight: #7dc485;
 
 //Component Sizes
 $headerHeight: 80px;
@@ -27,9 +27,3 @@ $fontweight-light: 400;
 $fontweight-medium: 600;
 $fontweight-semibold: 800;
 
-//Desktop Sizes
-$gap: 32px !default;
-$tablet: 769px !default;
-$desktop: 960px + (2 * $gap) !default;
-$widescreen: 1152px + (2 * $gap) !default;
-$fullhd: 1344px + (2 * $gap) !default;

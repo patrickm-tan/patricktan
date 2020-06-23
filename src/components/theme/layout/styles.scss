@@ -1,6 +1,7 @@
 @import "../../utilities/variables";
 @import "../../utilities/base";
 @import "../../utilities/mixins";
+@import "../../utilities/animations";
 
 * {
     font-family: $font;
@@ -9,8 +10,8 @@
 
 .container {
     margin: 0 auto;
-    max-width: $desktop;
-    @include respond-to(mobile) { max-width: $tablet;}
+    max-width: 1200px;
+    padding: 24px;
 }
 
 main {
@@ -31,7 +32,6 @@ main {
 .subtitle {
     letter-spacing: 4px;
     font-weight: $fontweight-light;
-    font-size: $size-5;
     text-transform: uppercase;
 }
 
@@ -42,18 +42,12 @@ ul {
 ul li {
     display: inline;
     padding-right: 25px;
-    font-size: $size-5;
 }
 
-.is-green {
-    color: $green;
+.is-highlight {
+    color: $highlight;
 }
 
 h1, h2 {
     margin: 0;
 }
-
-@keyframes fade-in {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
