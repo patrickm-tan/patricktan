@@ -12,7 +12,7 @@ const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
-  const mdxTemplate = path.resolve(`src/components/theme/projects/template.js`)
+  const mdxTemplate = path.resolve(`./src/components/theme/projects/template.js`)
 
   /* Query all .mdx */
   const mdxQuery = await graphql(`

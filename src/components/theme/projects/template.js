@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../layout/layout"
+import "./styles.scss"
 
 
 
@@ -12,10 +13,13 @@ export default function PageTemplate({ data: { mdx } }) {
 
   return (
     <Layout>
+      <div className="content">
         <h1>{mdx.frontmatter.title}</h1>
+        <h2>{mdx.frontmatter.type}</h2>
         <MDXProvider components={shortcodes}>
             <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
+      </div>
     </Layout>
   )
 }
@@ -26,7 +30,8 @@ export const query = graphql`
       id
       body
       frontmatter {
-        title
+        title,
+        type
       }
     }
   }
