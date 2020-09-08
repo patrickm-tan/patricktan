@@ -19,6 +19,8 @@ const IndexPage = () => (
         <ul>
           <li><i>Work in progress! </i>👷🏽</li>
         </ul>
+        <br/>
+        <p>P.S. I also do <Link to="/blog">photography</Link> and <a href="https://github.com/patrickm-tan?tab=repositories" target="_blank">front-end</a> stuff for fun!</p>
       </div>
     </div>
   </Layout>
