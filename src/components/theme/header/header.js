@@ -2,6 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery } from "gatsby"
 
+import resumeDownload from "../../../assets/resume/PatrickTanResume.pdf"
+
 import "./styles.scss"
 
 const Header = () => {
@@ -31,7 +33,7 @@ const Header = () => {
         <nav>
           <Link to="/">home</Link>
           <Link to="/">blog</Link>
-          <Link to="/">resume</Link>
+          <a href={resumeDownload} download>resume</a>
         </nav>
       </div>
     </div>
