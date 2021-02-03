@@ -51,6 +51,6 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "resolutions": {
-    "sharp": "0.25.1"
+    "sharp": "0.27.0"
   }
 }
