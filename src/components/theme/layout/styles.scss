@@ -8,10 +8,15 @@
     color: $main-text;
 }
 
+//Content Sizes
+.content-lg {
+    margin: 74px auto;
+    width: 100%;
+}
+
 .container {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 24px;
 }
 
 main {
@@ -40,11 +45,13 @@ ul {
 }
 
 ul li {
-    display: inline;
     padding-right: 25px;
     @media (max-width: 700px) {
         display: block;
         margin: 1rem 0px;
+    }
+    &.work {
+        display: inline;
     }
 }
 

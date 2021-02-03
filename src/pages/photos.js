@@ -11,7 +11,7 @@ const PhotosPage = ({ data }) => (
     <SEO title="Home" />
 
     <div className="hero">
-      <div className="content">
+      <div className="content-lg">
         {data.allFile.edges.map(edge => {
         return <Img fluid={edge.node.childImageSharp.fluid} />
         })}

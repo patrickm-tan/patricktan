@@ -29,4 +29,7 @@ a {
     &:hover {
         color: $links;
     }
+    &.underline {
+        text-decoration: underline;
+    }
 }

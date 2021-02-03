@@ -13,9 +13,9 @@ export default function PageTemplate({ data: { mdx } }) {
 
   return (
     <Layout>
-      <div className="content">
+      <div className="content-sm project">
         <h1>{mdx.frontmatter.title}</h1>
-        <h2>{mdx.frontmatter.type}</h2>
+        <h2 className="caption">{mdx.frontmatter.caption}</h2>
         <MDXProvider components={shortcodes}>
             <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -31,7 +31,7 @@ export const query = graphql`
       body
       frontmatter {
         title,
-        type
+        caption
       }
     }
   }
