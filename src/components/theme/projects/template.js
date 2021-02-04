@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import { Link } from "gatsby"
 import Layout from "../layout/layout"
+import Img from "gatsby-image"
 import "./styles.scss"
 
 
@@ -16,6 +17,7 @@ export default function PageTemplate({ data: { mdx } }) {
       <div className="content-sm project">
         <h1>{mdx.frontmatter.title}</h1>
         <h2 className="caption">{mdx.frontmatter.caption}</h2>
+        <Img fluid={mdx.frontmatter.featuredImage.childImageSharp.fluid} />
         <MDXProvider components={shortcodes}>
             <MDXRenderer>{mdx.body}</MDXRenderer>
         </MDXProvider>
@@ -31,7 +33,14 @@ export const query = graphql`
       body
       frontmatter {
         title,
-        caption
+        caption,
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
