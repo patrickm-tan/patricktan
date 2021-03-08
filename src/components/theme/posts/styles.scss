@@ -1,0 +1,29 @@
+@import "../../utilities/variables";
+@import "../../utilities/animations";
+
+.content-sm {
+    margin: 74px auto;
+    width: 66%;
+}
+
+.project p, .project li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 21px;
+    letter-spacing: -0.003em;
+    line-height: 32px;
+}
+
+.project ul {
+    padding-left: 40px;
+}
+
+.gatsby-image-wrapper {
+    margin: 3.5rem
+}
+
+.caption {
+    font-size: $size-6;
+    color: $links;
+    font-weight: $fontweight-light;
+}

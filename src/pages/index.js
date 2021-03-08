@@ -20,7 +20,6 @@ const IndexPage = () => (
           <li className="work">Royal Bank of Canada</li>
           <li className="work">Threads</li>
           <li className="work">Event Tune</li>
-          <li className="work">Product Design</li>
         </ul>
         <br/>
         <p>P.S. I also do <Link to="/photos" className="underline">photography</Link> and <a href="https://github.com/patrickm-tan?tab=repositories" target="_blank" className="underline">front-end</a> stuff for fun!</p>

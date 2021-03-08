@@ -1,7 +1,7 @@
 ---
-path: "/projects/rbc"
 date: "2019-08-29"
 title: "Royal Bank of Canada"
+slug: "rbc"
 caption: "UX Research for RBC's mobile and web application"
 featuredImage: ../assets/images/projects/rbc/rbc-banner.jpg
 ---
