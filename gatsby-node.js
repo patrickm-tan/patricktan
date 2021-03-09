@@ -132,7 +132,7 @@ exports.createPages = ({ graphql, actions }) => {
         const next = index === 0 ? null : blogEdges[index - 1].node;
 
         createPage({
-          path: `/posts/${edge.node.frontmatter.slug}`,
+          path: `/blog/posts/${edge.node.frontmatter.slug}`,
           component: path.resolve("./src/components/theme/posts/template.js"),
           context: {
             slug: edge.node.frontmatter.slug,

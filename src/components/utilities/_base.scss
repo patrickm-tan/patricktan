@@ -21,7 +21,21 @@ p {
     font-weight: 400;
 }
 
-//Links
+// Colors
+.is-green {
+    color: $light-green;
+}
+.is-red {
+    color: $light-red;
+}
+.is-yellow {
+    color: $light-yellow;
+}
+.is-blue {
+    color: $light-blue;
+}
+
+// Links
 a {
     display: inline-block;
     text-decoration: none;
