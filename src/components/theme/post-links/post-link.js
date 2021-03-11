@@ -12,6 +12,8 @@ function checkCategory(category) {
       return "category is-yellow";
     case "case study":
       return "category is-blue";
+    case "product design":
+      return "category is-orange";
     default:
       return "hello world";
   }

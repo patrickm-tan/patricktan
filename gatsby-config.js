@@ -16,20 +16,24 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
-    `gatsby-transformer-remark`,
-    `gatsby-remark-images`,
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        gatsbyRemarkPlugins: [
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              staticFolderName: `static`,
+            },
+          }, 
           {
             resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
+            options: { 
+              maxWidth: 1024
             },
           },
-        ],
-      },
+        ]
+      }
     },
     {
       resolve: `gatsby-source-filesystem`,
