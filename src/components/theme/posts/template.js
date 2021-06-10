@@ -20,7 +20,7 @@ export default function Template ({
       <div className="content-sm project">
         <h1>{frontmatter.title}</h1>
         <h2 className="caption">{frontmatter.caption}</h2>
-        <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />
+        <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} className="featuredImage" />
         <div
           dangerouslySetInnerHTML={{ __html: html }}
         />

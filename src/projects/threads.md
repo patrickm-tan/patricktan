@@ -51,11 +51,13 @@ We than did user interviews, which meant we had a short 35 minute conversation w
 
 #### Creating an experience
 
-To further understand the students experiences, we developed an experience map based on the feedback from the formative studies in the previous section. The main goal in creating an experience map was to visualize an end-to-end experience that students go through when attending social events. The map will allow us to see the bigger picture in where we can highlight painpoints in the experience but also enjoyable aspects. 
+To further understand the students experiences, we developed an experience map based on the feedback from the formative studies in the previous section. The main goal in creating an experience map was to visualize an end-to-end experience that students go through when attending social events. The map will allow us to see the bigger picture in where we can highlight painpoints in the experience but also enjoyable aspects throughout their experience. 
 
 ![Experience Map](../assets/images/projects/threads/experience.png)
 
 ### Sketching and Testing
+
+With the first stage of the research done, we were able to create a low-fidely prototype of a mobile app. Utilizing the research from the experience map, we highlighted 
 
 Paper prototyping...
 - What was the goal?
@@ -77,7 +79,6 @@ List of the 10 usability heuristics we used to test for
 - Aesthetic and minimalist design
 - Help users recognize, diagnose, and recover from errors
 - Help and documentation
-
 
 
 ### Final Design
