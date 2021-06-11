@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import { useStaticQuery } from "gatsby"
+import { graphql } from 'gatsby'
 
 import resumeDownload from "../../../assets/resume/PatrickTanResume.pdf"
 
