@@ -28,13 +28,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-/* 
-
-          <li> <Link to = {'./projects/fcbsix'}>FCB/SIX</Link></li>
-          <li> <Link to = {'./projects/rbc-chab'}>Royal Bank of Canada</Link></li>
-          <li> <Link to = {'./projects/uoft'}>University of Toronto</Link></li>
-          <li> <Link to = {'./projects/presto'}>Presto</Link></li>
-
-*/
-
 export default IndexPage
