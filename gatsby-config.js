@@ -1,65 +1,29 @@
 module.exports = {
   siteMetadata: {
-    title: `Patrick Tan`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@patricktan`,
+    title: "Patrick Tan",
+    description: "A website about me!",
+    author: "Patrick Tan"
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sass",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
+        name: "images",
+        path: "./src/images/",
       },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `gatsby-remark-relative-images`,
-            options: {
-              staticFolderName: `static`,
-            },
-          }, 
-          {
-            resolve: `gatsby-remark-images`,
-            options: { 
-              maxWidth: 1024
-            },
-          },
-        ]
-      }
+      __key: "images",
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-filesystem",
       options: {
-        path: `${__dirname}/src/projects`,
-        name: `projects`
-      }
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/posts`,
-        name: `posts`
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `patricks-research-portfolio`,
-        short_name: `research`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
+        name: "pages",
+        path: "./src/pages/",
       },
+      __key: "pages",
     },
   ],
 }
